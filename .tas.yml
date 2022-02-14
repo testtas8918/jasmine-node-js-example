@@ -1,0 +1,12 @@
+---
+framework: jasmine
+preMerge:
+  pattern:
+    - "spec/**/*.js"
+postMerge:
+  pattern:
+    - "spec/**/*.js"
+preRun:
+  - npm ci
+postRun:
+  - echo 'Complete'
